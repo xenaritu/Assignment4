@@ -4,7 +4,7 @@ We were provided data for experiments  carried out with a group of 30 subjects w
 
 For each of the variable described above, I have calculated the mean of the measurement for each person for each activity that he performed.
 
-*list of variables*
+**List of variables**
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
@@ -29,17 +29,17 @@ fBodyGyroJerkMag
 prefix 't' to denote time 
 prefix 'f' to indicate frequency domain signals
 
-tBodyAcc-XYZ and tGravityAcc-XYZ : acceleration signal separated into body and gravity acceleration signals
+*tBodyAcc-XYZ and tGravityAcc-XYZ* 
+acceleration signal separated into body and gravity acceleration signals
 
-tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ : 
+*tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ*
 the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
 
-tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag : 
+*tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag*
 magnitude of these three-dimensional signals were calculated using the Euclidean norm 
 
-Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag 
-
-These signals were used to estimate variables of the feature vector for each pattern:  
+*fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag* 
+Fast Fourier Transform (FFT) of the signals
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 The set of variables that were estimated from these signals are: 
@@ -47,13 +47,4 @@ The set of variables that were estimated from these signals are:
 mean(): Mean value
 std(): Standard deviation
 
-
-Additional vectors obtained by averaging the signals in a signal window sample. 
-These are used on the angle() variable:
-
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
 
