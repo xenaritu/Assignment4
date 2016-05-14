@@ -30,21 +30,26 @@ prefix 't' to denote time
 prefix 'f' to indicate frequency domain signals
 
 *tBodyAcc-XYZ and tGravityAcc-XYZ* 
+
 acceleration signal separated into body and gravity acceleration signals
 
 *tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ*
+
 the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
 
 *tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag*
+
 magnitude of these three-dimensional signals were calculated using the Euclidean norm 
 
 *fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag* 
+
 Fast Fourier Transform (FFT) of the signals
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 The set of variables that were estimated from these signals are: 
 
 mean(): Mean value
+
 std(): Standard deviation
 
 
