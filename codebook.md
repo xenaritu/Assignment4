@@ -6,23 +6,23 @@ For each of the variable described above, I have calculated the mean of the meas
 
 **List of variables**
 
-*tBodyAcc-XYZ
-*tGravityAcc-XYZ
-*tBodyAccJerk-XYZ
-*tBodyGyro-XYZ
-*tBodyGyroJerk-XYZ
-*tBodyAccMag
-*tGravityAccMag
-*tBodyAccJerkMag
-*tBodyGyroMag
-*tBodyGyroJerkMag
-*fBodyAcc-XYZ
-*fBodyAccJerk-XYZ
-*fBodyGyro-XYZ
-*fBodyAccMag
-*fBodyAccJerkMag
-*fBodyGyroMag
-*fBodyGyroJerkMag
+..*xtBodyAcc-XYZ
+..*tGravityAcc-XYZ
+..*tBodyAccJerk-XYZ
+..*tBodyGyro-XYZ
+..*tBodyGyroJerk-XYZ
+..*tBodyAccMag
+..*tGravityAccMag
+..*tBodyAccJerkMag
+..*tBodyGyroMag
+..*tBodyGyroJerkMag
+..*fBodyAcc-XYZ
+..*fBodyAccJerk-XYZ
+..*fBodyGyro-XYZ
+..*fBodyAccMag
+..*fBodyAccJerkMag
+..*fBodyGyroMag
+..*fBodyGyroJerkMag
 
 **Description of the measurements taken**
 
@@ -48,7 +48,7 @@ Fast Fourier Transform (FFT) of the signals
 
 The set of variables that were estimated from these signals are: 
 
-1. *mean*: Mean value
-2. *std*:  Standard deviation
+..* mean: Mean value
+..* std:  Standard deviation
 
 
