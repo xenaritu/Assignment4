@@ -1,3 +1,4 @@
+library("data.table", lib.loc="~/R/x86_64-pc-linux-gnu-library/3.2")
 #reading training data 
 setwd("test")
 testdata <- read.table("X_test.txt")
@@ -41,9 +42,11 @@ comp_data_new1 <- data.table(comb_data_new , key = 'activity')
 activity_label1 <- data.table(activity_label , key = 'activity')
 final_data <- merge(comp_data_new1 , activity_label1)
 
+# summerizing data for each activity for each subject
 library("dplyr", lib.loc="~/R/x86_64-pc-linux-gnu-library/3.2")
 final_data <-arrange(final_data, subject) 
 grp_data  <- group_by(final_data, subject , activity_name)
 summarize_data <- grp_data %>% summarise_each(funs(mean))
 
-
+#writing data to a txt file
+write.table(summarize_data,"./summarize.txt",row.names = FALSE)
