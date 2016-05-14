@@ -1,11 +1,10 @@
-
 #reading training data 
-setwd("~/Documents/R working directory/UCI HAR Dataset/test")
+setwd("test")
 testdata <- read.table("X_test.txt")
 test_Rnames <- read.table("subject_test.txt")
 test_acti <- read.table("y_test.txt")
 
-setwd("~/Documents/R working directory/UCI HAR Dataset")
+setwd("..")
 feature_detail <- read.table("features.txt")
 activity_label <- read.table("activity_labels.txt")
 names(activity_label) <- c('activity' , 'activity_name')
@@ -15,12 +14,12 @@ testdata$subject <- test_Rnames$V1
 testdata$activity <- test_acti$V1
 
 #reading train train 
-setwd("~/Documents/R working directory/UCI HAR Dataset/train")
+setwd("train")
 traindata <- read.table("X_train.txt")
 train_Rnames <- read.table("subject_train.txt")
 train_acti <- read.table("y_train.txt")
 
-setwd("~/Documents/R working directory/UCI HAR Dataset")
+setwd("..")
 feature_detail <- read.table("features.txt")
 names(traindata) <- feature_detail[,2]
 
@@ -46,4 +45,5 @@ library("dplyr", lib.loc="~/R/x86_64-pc-linux-gnu-library/3.2")
 final_data <-arrange(final_data, subject) 
 grp_data  <- group_by(final_data, subject , activity_name)
 summarize_data <- grp_data %>% summarise_each(funs(mean))
+
 
